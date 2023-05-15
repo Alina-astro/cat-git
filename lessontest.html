@@ -9,6 +9,8 @@
         body {
             background: rgb(148, 187, 233);
             background: radial-gradient(circle, rgba(148, 187, 233, 1) 0%, rgba(238, 174, 202, 1) 100%);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 13pt;
         }
 
         h1 {
@@ -20,7 +22,8 @@
         }
 
         h2 {
-            color: #4d4a50;
+            color: #665e6e;
+            margin-left: 15pt;
         }
 
         #logo {
@@ -34,28 +37,27 @@
             color: #8bb614
         }
 
-        #poroda {
-            margin-left: 20px;
-        }
+
 
         label,
+        select,
         p {
-            color: #efee0e;
-        }
-
-        select {
+            color: #255892;
             margin: 20px;
         }
 
-        #selectcat {
+        input {
+            margin: 10px;
+        }
+
+        #selectcat,
+        .names {
             margin: 20px;
             border: 1px solid #190982;
             box-shadow: 0 0 10px #255892;
         }
 
-        #food {
-            padding: 10px;
-        }
+
 
         button {
             background-color: #fd3a91;
@@ -66,6 +68,7 @@
             font-size: 14pt;
             color: #100f0d;
             box-shadow: 0 0 20px #272727;
+            margin: 20px;
         }
 
         .save {
@@ -74,19 +77,15 @@
 
 
         svg {
-            width: 30%;
+            width: 25%;
         }
 
         .names {
-            text-decoration: underline;
-            text-decoration-color: #6cf646;
-            text-align: center;
-            text-align-last: center;
-            text-transform: uppercase;
+            text-align: left;
+            text-align-last: left;
         }
 
-        #redcat,
-        #objredcat {
+        #redcat {
             margin: 20px;
             width: 15%;
             border-radius: 15px;
@@ -106,7 +105,6 @@
     <h2>Пройдите небольшой опрос</h2>
     <form action="script.php" method="post">
         <fieldset class="names">
-            <legend>Ваши данные</legend>
             <p>
                 <label for="name-cat">Кличка питомца</label>
                 <input type="text" id="name-cat">
@@ -154,8 +152,6 @@
                     <option value="29">Другой вариант</option>
                 </select>
             </p>
-        </div>
-        <div id="food">
             <p>Чем питается?<br>
                 <input type="checkbox" id="food1">
                 <label for="food1">Сухой корм</label><br>
@@ -164,42 +160,25 @@
                 <input type="checkbox" id="food3">
                 <label for="food3">Натуральный корм</label><br>
             </p>
+            <p>Пол вашего питомца<br>
+                <input type="radio" name="sex" id="female">
+                <label for="female">Самка</label><br>
+                <input type="radio" name="sex" id="male">
+                <label for="male">Самец</label>
+            </p>
         </div>
-        <p>Пол вашего питомца<br>
-            <input type="radio" name="sex" id="female">
-            <label for="female">Самка</label><br>
-            <input type="radio" name="sex" id="male">
-            <label for="male">Самец</label>
-        </p>
         <p>Комментарий владельца<br>
             <textarea rows="10" cols="40" id="comment" placeholder="Дополнительная информация о питомце"></textarea>
         </p>
         <p><label for="image">Вы можете добавить фото питомца</label><br>
             <input type="file" id="image" name="image" accept="image/jpeg">
         </p>
+        <div>
+            <img id="redcat" src="assets/images/redcat.jpeg" alt="redcat">
+        </div>
         <button><img class="save" src="assets/images/iconcat2.png" alt="сохранение">Сохранить</button>
     </form>
-    <div style="background-image: url(assets/images/pinkstars.jpg); height: 100px; width: 200px;">
-        <p>текст на картинке</p>
-    </div>
-    <svg width="200">
-        <rect fill="pink" width="200" height="200" />
-        <line stroke="violet" x1="0" y1="0" x2="200" y2="180" />
-    </svg>
-    <div>Тут у нас будет SVG-файл:<br>
-        <svg>
-            <rect fill="pink" width="200" height="200" />
-        </svg>
-        <p>тестируем тег</p>
-        <object id="objredcat" type="image/jpg" data="assets/images/redcat.jpeg">
-        </object>
-    </div>
-    <div>Тестируем стиль<br>
-        <img id="redcat" src="assets/images/redcat.jpeg" alt="redcat">
-    </div>
-    <div style="background: linear-gradient(#190982, #6cf646); color:#ffffff; height: 100px; width: 200px;">
-        Gradient
-    </div>
+
     <div>
         <?xml version="1.0" encoding="UTF-8" standalone="no"?>
         <svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#"
