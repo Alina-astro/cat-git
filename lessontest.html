@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {
-            background: rgb(148, 187, 233);
             background: radial-gradient(circle, rgb(147, 146, 233) 0%, rgba(238, 174, 202, 1) 100%);
             font-family: Arial, Helvetica, sans-serif;
             font-size: 13pt;
@@ -95,6 +94,141 @@
             margin-top: 30px;
             margin-left: 20px;
             font-size: 14px;
+        }
+
+        .testflex {
+            border: 1px solid pink;
+            margin: 20px;
+            display: flex;
+            flex-direction: row-reverse;
+            flex-wrap: wrap;
+            align-items: flex-end;
+            height: 100px;
+            align-content: space-between;
+        }
+
+        .testflex p {
+            border: 1px solid silver;
+        }
+
+        .testmargin {
+            margin: auto;
+        }
+
+        .testflex1 {
+            border: 1px solid pink;
+            margin: 20px;
+            display: flex;
+            height: 30vh;
+            flex-direction: row;
+            align-items: stretch;
+        }
+
+        .testflex1 p {
+            border: 1px solid silver;
+        }
+
+        .testflex12 {
+            align-self: center;
+            flex-grow: 1;
+        }
+
+        .testflex2 {
+            border: 1px solid pink;
+            margin: 20px;
+            display: flex;
+            height: 30vh;
+            flex-direction: row;
+            align-items: stretch;
+        }
+
+        .testflex2 p {
+            border: 1px solid silver;
+            flex-basis: 20%;
+        }
+
+        .testflex5 {
+            color: #cd2d75;
+            border: 1px solid rgb(255, 255, 255);
+            display: flex;
+            flex-flow: column;
+            min-height: 50vh;
+        }
+
+        .testflex5 div {
+            border: 1px solid pink;
+        }
+
+        .main nav,
+        .main section,
+        .main aside {
+            border: 1px solid palegreen;
+        }
+
+        .testflex5 .header,
+        .testflex5 .footer {
+            flex: 0 0 content;
+        }
+
+        .testflex5 .main {
+            display: flex;
+            flex: 1;
+            flex-direction: row;
+            justify-content: stretch;
+        }
+
+        .main nav,
+        .main aside {
+            width: 20vw;
+        }
+
+        .main section {
+            flex: 1;
+        }
+
+        .testtable {
+
+            border: 5px double #2b298d;
+            margin: 50px 40px 50px 40px;
+            width: 800px;
+            height: 300px;
+            flex-flow: column;
+            min-height: 50vh;
+        }
+
+        .testtable div {
+            border: 1px solid pink;
+        }
+
+        .main1 div,
+        .main1 .section1,
+        .main1 .section2,
+        .main1 .aside1,
+        .main1 .aside2 {
+            border: 1px solid palegreen;
+        }
+
+        .testtable .header1,
+        .testtable .footer1 {
+            flex: 0 0 content;
+        }
+
+        .testtable .main1 {
+            display: flex;
+            flex: 1;
+            flex-direction: row;
+            justify-content: stretch;
+        }
+
+        .main1 .header1,
+        .main1 .aside1,
+        .main1 .aside2 {
+            width: 20vw;
+        }
+
+        .main .section1,
+        .main .section2 {
+            flex: 1;
         }
     </style>
     <title>Клуб любителей котиков</title>
@@ -185,6 +319,9 @@
             </div>
             <button><img class="save" src="assets/images/iconcat2.png" alt="сохранение">Сохранить</button>
         </form>
+
+
+
     </main>
     <footer>
         <div class="rules">Нажимая кнопку "Сохранить":

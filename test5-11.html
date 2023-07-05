@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: linear-gradient(90deg, rgba(181, 199, 221, 1) 0%, rgba(249, 243, 225, 1) 87%);
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 13pt;
+        }
+
+        /*------------------------------------V5----------------------*/
+        .testtable1 {
+
+            border: 1px solid #2b298d;
+            margin: 50px 40px 50px 340px;
+            width: 600px;
+            height: 270px;
+            flex-flow: column;
+            background: #ffffff;
+
+        }
+
+        .header1 div,
+        .menu1,
+        .section1 div,
+        .aside1 div {
+            border: 1px solid #2b298d;
+            margin: 1px;
+
+        }
+
+        .footer1 {
+            border: 1px solid #2b298d;
+            margin: 3px;
+            height: 30%;
+        }
+
+
+        .header1,
+        .main1 {
+            display: flex;
+            text-align: center;
+            height: 33%;
+            margin: 1px;
+        }
+
+
+        .header1 div,
+        .section1,
+        .aside1 {
+            width: 33.3%;
+        }
+
+        .menu1 {
+            width: 32.7%;
+        }
+
+        .section1 div,
+        .aside1 div {
+            display: flex;
+            flex-direction: column;
+            height: 46%;
+        }
+    </style>
+</head>
+
+<body>
+    <!------------------------------------V5---------------------->
+    <div class="testtable1">
+        <div class="header1">
+            <div>Columu 1</div>
+            <div>Columu 2</div>
+            <div>Columu 3</div>
+        </div>
+        <div class="main1">
+            <div class="menu1">Row 1 Cell 1</div>
+            <div class="section1">
+                <div class="s1">Row 1 Cell 2</div>
+                <div class="s2">Row 2 Cell 2</div>
+            </div>
+            <div class="aside1">
+                <div class=" a1">Row 1 Cell 3</div>
+                <div class="a2">Row 2 Cell 3</div>
+            </div>
+        </div>
+        <div class="footer1">Row 3 Cell 1</div>
+    </div>
+</body>
+
+</html>
