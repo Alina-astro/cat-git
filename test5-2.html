@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2</title>
+    <link rel="shortcut icon" href="assets/images/apple-laptop-computer.png" type="image/png">
+    <style>
+        body {
+            background: #473c60;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 500;
+            font-size: 13pt;
+            text-align: center;
+        }
+
+        .header {
+            background: #e7d1ff;
+            height: 12vh;
+        }
+
+        /*.header div {
+            border: 1px solid #fff18a;
+            margin-top: 20px;   /*не работает отступ внутри header, отступ двигает сам header, но не надпись/
+        }*/
+
+        p {
+            border: 1px solid #eb8aff;
+        }
+
+
+        main {
+            height: 65vh;
+            display: flex;
+        }
+
+        .main .mainsect {
+            background: #ffedad;
+            display: flex;
+            flex-direction: row;
+            flex: 1;
+            flex-wrap: wrap;
+            align-content: space-between;
+            align-items: stretch
+        }
+
+
+        .mainsect div {
+            background: #a9ff8a;
+            border: #473c60 1px solid;
+            display: flex;
+            flex-direction: row;
+            flex: ;
+        }
+
+
+
+        .aside {
+            background: #edffd2;
+            width: 30%;
+
+        }
+
+        .footer {
+            background: #e7d1ff;
+            height: 12vh;
+            display: flex;
+            flex-direction: row;
+            align-items: stretch;
+            padding: 25px;
+            justify-content: space-between;
+        }
+
+        div.footer1 {
+            flex-basis: 22%;
+            background: #ffffff;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div>Title</div>
+    </header>
+    <main class="main">
+        <section class="mainsect">
+            <p>Main</p>
+            <div class="else1">Else1</div>
+            <div class="else2">Else2</div>
+            <div class="else3">Else3</div>
+        </section>
+        <aside class="aside">
+            <p>Aside</p>
+        </aside>
+    </main>
+    <footer class="footer">
+        <div class="footer1">Footer1</div>
+        <div class="footer1">Footer2</div>
+        <div class="footer1">Footer3</div>
+        <div class="footer1">Footer4</div>
+    </footer>
+</body>
+
+</html>
