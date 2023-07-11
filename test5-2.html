@@ -9,7 +9,7 @@
     <link rel="shortcut icon" href="assets/images/apple-laptop-computer.png" type="image/png">
     <style>
         body {
-            background: #473c60;
+            background: #f5beff;
             font-family: Arial, Helvetica, sans-serif;
             font-weight: 500;
             font-size: 13pt;
@@ -17,17 +17,11 @@
         }
 
         .header {
-            background: #e7d1ff;
+            background: #bdbdbd;
             height: 12vh;
-        }
-
-        /*.header div {
-            border: 1px solid #fff18a;
-            margin-top: 20px;   /*не работает отступ внутри header, отступ двигает сам header, но не надпись/
-        }*/
-
-        p {
-            border: 1px solid #eb8aff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
 
@@ -36,23 +30,43 @@
             display: flex;
         }
 
-        .main .mainsect {
-            background: #ffedad;
+        .mainsect {
+            background: #fcf3d4;
             display: flex;
-            flex-direction: row;
-            flex: 1;
-            flex-wrap: wrap;
-            align-content: space-between;
-            align-items: stretch
+            flex-direction: column;
+            flex-basis: 70%;
+            flex-grow: 1;
+            justify-content: space-between;
         }
 
-
-        .mainsect div {
-            background: #a9ff8a;
-            border: #473c60 1px solid;
+        .else {
+            background: #fcf3d4;
             display: flex;
             flex-direction: row;
-            flex: ;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            flex: 1 0 55%;
+        }
+
+        .mainsect p {
+            flex: 1 0 15%;
+            margin-top: 10%;
+        }
+
+        .else3 {
+            flex: 1 0 90%;
+            margin: 0px 15px 15px 15px;
+        }
+
+        .else1,
+        .else2 {
+            flex: 1 0 40%;
+            margin: 15px;
+
+        }
+
+        .else div {
+            background: #ffdd95;
         }
 
 
@@ -60,11 +74,14 @@
         .aside {
             background: #edffd2;
             width: 30%;
+        }
 
+        .aside p {
+            margin-top: 25%;
         }
 
         .footer {
-            background: #e7d1ff;
+            background: #bdbdbd;
             height: 12vh;
             display: flex;
             flex-direction: row;
@@ -88,19 +105,21 @@
     <main class="main">
         <section class="mainsect">
             <p>Main</p>
-            <div class="else1">Else1</div>
-            <div class="else2">Else2</div>
-            <div class="else3">Else3</div>
+            <div class="else">
+                <div class="else1">Else 1</div>
+                <div class="else2">Else 2</div>
+                <div class="else3">Else 3</div>
+            </div>
         </section>
         <aside class="aside">
             <p>Aside</p>
         </aside>
     </main>
     <footer class="footer">
-        <div class="footer1">Footer1</div>
-        <div class="footer1">Footer2</div>
-        <div class="footer1">Footer3</div>
-        <div class="footer1">Footer4</div>
+        <div class="footer1">Footer 1</div>
+        <div class="footer1">Footer 2</div>
+        <div class="footer1">Footer 3</div>
+        <div class="footer1">Footer 4</div>
     </footer>
 </body>
 
