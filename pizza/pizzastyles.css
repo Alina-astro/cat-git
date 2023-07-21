@@ -10,7 +10,7 @@ section.welcome {
 
 .welcome-text {
     border: 1px solid rgb(193, 70, 193);
-    flex: 1 0 48%;
+    flex: 1 0 40%;
 }
 
 .logo img {
@@ -41,9 +41,43 @@ section.welcome {
     margin: 100px 200px 0px 80px;
 }
 
+.leaf {
+    margin-right: -15px;
+}
+
 .welcome-image {
     border: 1px solid rgb(193, 70, 193);
-    flex: 0 1 48%;
+    flex: 1 0 50%;
+    position: relative;
+}
+
+.ellipsered {
+    width: 50vw;
+    position: absolute;
+    margin-top: -15px;
+    z-index: auto;
+}
+
+.ellipsewhite {
+    width: 40vw;
+    position: absolute;
+    z-index: 2;
+}
+
+.imgpizza {
+    width: 40vw;
+    position: absolute;
+    z-index: 3;
+}
+
+.plant1,
+.plant2,
+.chilli,
+.mashroom,
+.fish1,
+.fish2 {
+    position: absolute;
+    z-index: 4;
 }
 
 section.delivery {
