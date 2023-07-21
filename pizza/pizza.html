@@ -5,148 +5,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        body {
-            background: rgb(147, 146, 233);
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 13pt;
-        }
-
-        /*------------------------------------V1----------------------*/
-        .testflex {
-            border: 2px solid pink;
-            margin: 20px;
-            display: flex;
-            flex-direction: row-reverse;
-            flex-wrap: wrap;
-            align-items: flex-end;
-            height: 100px;
-            align-content: space-between;
-        }
-
-        .testflex p {
-            border: 2px solid silver;
-        }
-
-        .testmargin {
-            margin: auto;
-        }
-
-        /*------------------------------------V2----------------------*/
-        .testflex1 {
-            border: 2px solid pink;
-            margin: 20px;
-            display: flex;
-            height: 30vh;
-            flex-direction: row;
-            align-items: stretch;
-        }
-
-        .testflex1 p {
-            border: 2px solid silver;
-        }
-
-        .testflex12 {
-            align-self: center;
-            flex-grow: 1;
-        }
-
-        /*------------------------------------V3----------------------*/
-        .testflex2 {
-            border: 2px solid pink;
-            margin: 20px;
-            display: flex;
-            height: 30vh;
-            flex-direction: row;
-            align-items: stretch;
-        }
-
-        .testflex2 p {
-            border: 2px solid silver;
-            flex-basis: 20%;
-        }
-
-        /*------------------------------------V4----------------------*/
-        .testflex5 {
-            color: #cd2d75;
-            border: 2px solid #ffffff;
-            display: flex;
-            flex-flow: column;
-            min-height: 50vh;
-        }
-
-        .testflex5 div {
-            border: 2px solid pink;
-        }
-
-        .main nav,
-        .main section,
-        .main aside {
-            border: 2px solid palegreen;
-        }
-
-        .testflex5 .header,
-        .testflex5 .footer {
-            flex: 0 0 content;
-        }
-
-        .testflex5 .main {
-            display: flex;
-            flex: 1;
-            flex-direction: row;
-            justify-content: stretch;
-        }
-
-        .main nav,
-        .main aside {
-            width: 20vw;
-        }
-
-        .main section {
-            flex: 1;
-        }
-
-
-
-        /*------------------------------------V----------------------*/
-    </style>
+    <title>Salvation Pizza</title>
+    <link rel="shortcut icon" href="images/icons-pizza.png" type="image/png">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="pizzastyles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700;900&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <!------------------------------------V1---------------------->
-    <div class="testflex">
-        <p>I love my cat!</p>
-        <p class="testmargin">My cat is very cut and happy</p>
-        <p>My cat is red</p>
-    </div>
-    <!------------------------------------V2---------------------->
-    <div class="testflex1">
-        <p class="testflex11">I love my cat!</p>
-        <p class="testflex12">My cat is very cut and happy</p>
-        <p class="testflex13">My cat is red</p>
-        <p class="testflex14">My cat's eyes are green</p>
-    </div>
-    <!------------------------------------V3---------------------->
-    <div class="testflex2">
-        <p class="testflex21">I love my cat!</p>
-        <p class="testflex22">My cat is very cut and happy</p>
-        <p class="testflex23">My cat is red</p>
-        <p class="testflex24">My cat's eyes are green</p>
-    </div>
-    <!------------------------------------V4---------------------->
-    <div class="testflex5">
-        <div class="header">Title</div>
-        <div class="main">
-            <nav>Menu</nav>
-            <section>Section</section>
-            <aside>Aside</aside>
+    <section class="welcome">
+        <div class="welcome-text">
+            <div class="logo">
+                <img src="images/Mask Group.png" alt="logo">
+            </div>
+            <div class="title">
+                <h1>What is Lorem Ipsum</h1>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting<br />
+                    industry. Lorem Ipsum has been the industry's standard dummy text<br />
+                    ever since the 1500s, when an unknown</p>
+                <div class="order"><button>ORDER ONLINE<br />
+                        <span>Delivery or Pickup</span></button>
+                    <a href="">VIEW OUR MENU</a>
+                </div>
+                <img class="tomato" src="images/Tomato.png" alt="tomato">
+                <img class="leaf" src="images/Leaf.png" alt="leaf">
+            </div>
         </div>
-        <div class="footer">Footer</div>
-        <div></div>
-    </div>
+        <div class="welcome-image">
+            <img class="ellipsered" src="images/Ellipse 1.png" alt="ellipsered">
+            <img class="ellipsewhite" src="images/Ellipse 2.png" alt="ellipsewhite">
+            <img class="imgpizza" src="images/pizza.png" alt="pizza">
+            <img class="plant1" src="images/Plant.png" alt="plant">
+            <img class="plant2" src="images/Plant2.png" alt="plant">
+            <img class="fish1" src="images/european-pilchard 1.png" alt="fish">
+            <img class="fish2" src="images/european-pilchard 3.png" alt="fish">
+            <img class="chilli" src="images/Red Chilli 1.png" alt="chilli">
+            <img class="mashroom" src="images/Mashroom 2.png" alt="mashroom">
+        </div>
 
-    <!------------------------------------V---------------------->
+    </section>
+    <section class="delivery">
+
+    </section>
+    <section class="about-us">
+
+    </section>
 </body>
 
 </html>

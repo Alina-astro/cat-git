@@ -1,0 +1,55 @@
+body {
+    background-color: #ffffff;
+}
+
+section.welcome {
+    border: 2px solid violet;
+    padding: 80px 0px 0px 80px;
+    display: flex;
+}
+
+.welcome-text {
+    border: 1px solid rgb(193, 70, 193);
+    flex: 1 0 48%;
+}
+
+.logo img {
+    width: 16vw;
+}
+
+.title h1 {
+    font-family: 'Cabin Sketch', cursive;
+    font-size: 81px;
+    margin-top: 150px;
+}
+
+.title p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.order {
+    border: 1px solid rgb(193, 70, 193);
+    margin-top: 65px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.tomato {
+    margin: 100px 200px 0px 80px;
+}
+
+.welcome-image {
+    border: 1px solid rgb(193, 70, 193);
+    flex: 0 1 48%;
+}
+
+section.delivery {
+    border: 2px solid rgb(85, 230, 82);
+}
+
+section.about-us {
+    border: 2px solid rgb(142, 89, 212);
+}
