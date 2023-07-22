@@ -21,12 +21,14 @@ section.welcome {
     font-family: 'Cabin Sketch', cursive;
     font-size: 81px;
     margin-top: 150px;
+    line-height: 70px;
 }
 
 .title p {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     line-height: 22px;
+    margin-top: -20px;
 }
 
 .order {
@@ -38,11 +40,7 @@ section.welcome {
 }
 
 .tomato {
-    margin: 100px 200px 0px 80px;
-}
-
-.leaf {
-    margin-right: -15px;
+    margin: 100px auto auto 50px;
 }
 
 .welcome-image {
@@ -52,22 +50,24 @@ section.welcome {
 }
 
 .ellipsered {
-    width: 50vw;
+    width: 51.8vw;
     position: absolute;
     margin-top: -15px;
     z-index: auto;
 }
 
 .ellipsewhite {
-    width: 40vw;
+    width: 48vw;
     position: absolute;
     z-index: 2;
+    margin: 50px 30px 50px 30px;
 }
 
 .imgpizza {
-    width: 40vw;
+    width: 52vw;
     position: absolute;
-    z-index: 3;
+    z-index: 4;
+    margin: 5px 90px 50px -15px;
 }
 
 .plant1,
@@ -77,7 +77,35 @@ section.welcome {
 .fish1,
 .fish2 {
     position: absolute;
-    z-index: 4;
+    z-index: 3;
+}
+
+.plant1 {
+    margin: -40px auto auto 550px;
+}
+
+.plant2 {
+    margin: 610px auto auto 140px;
+}
+
+.fish1 {
+    margin: 330px auto auto -100px;
+}
+
+.fish2 {
+    margin: 130px auto auto 520px;
+}
+
+.chilli {
+    margin: 600px auto auto 520px;
+}
+
+.mashroom {
+    margin: 80px auto auto 140px;
+}
+
+.leaf {
+    margin: 770px auto auto -60px;
 }
 
 section.delivery {
