@@ -23,6 +23,7 @@ section.welcome {
     margin-top: 150px;
     line-height: 70px;
     color: #333333;
+    letter-spacing: 1px;
 }
 
 .title p {
@@ -114,7 +115,7 @@ section.welcome {
 .chilli,
 .mashroom,
 .fish1,
-.fish2 {
+.fish3 {
     position: absolute;
     z-index: 3;
 }
@@ -131,7 +132,7 @@ section.welcome {
     margin: 330px auto auto -100px;
 }
 
-.fish2 {
+.fish3 {
     margin: 130px auto auto 520px;
 }
 
@@ -147,10 +148,104 @@ section.welcome {
     margin: 770px auto auto -60px;
 }
 
+/*-----------------------------------Delivery-------------*/
 section.delivery {
     border: 2px solid rgb(85, 230, 82);
 }
 
+.delivery h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 48px;
+    color: #cf3031;
+    text-align: center;
+}
+
+.delivery span {
+    color: #333333;
+}
+
+div.delivery {
+    padding: 20px 80px 40px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div.delivery div {
+    width: 20vw;
+    aspect-ratio: 1/1;
+    box-shadow: 0px 4px 50px 0px rgba(71, 85, 114, 0.15);
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+div.delivery .fish2 {
+    position: absolute;
+    z-index: 0;
+    margin: 290px auto auto 780px;
+}
+
+.delivery .plant2 {
+    position: absolute;
+    margin: 300px auto auto 280px;
+}
+
+
+/*-----------------------------------Delivery-------------*/
 section.about-us {
-    border: 2px solid rgb(142, 89, 212);
+    border: 2px solid #8e59d4;
+}
+
+.about-us h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 48px;
+    color: #cf3031;
+    text-align: center;
+}
+
+.about-us span {
+    color: #333333;
+}
+
+div.about-us {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-us .imgleft,
+.about-us .imgright {
+    flex: 0 1 20%;
+}
+
+.imgleft img,
+.imgright img {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.imgleft .mashroom {
+    width: 8%;
+    position: absolute;
+    margin: 150px auto auto -180px;
+}
+
+.imgright .plant1 {
+    width: 12%;
+    position: absolute;
+    margin: -90px auto auto -185px;
+}
+
+.about-us .text-about-us {
+    flex: 0 1 50%;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
 }
