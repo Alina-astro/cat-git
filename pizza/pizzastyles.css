@@ -1,3 +1,25 @@
+@font-face {
+    font-family: 'CabinSketch-Bold';
+    src: url('./fonts/CabinSketch-Bold.ttf');
+    font-style: normal;
+    font-family: 'Roboto-Black';
+    src: url('./fonts/Roboto-Black.ttf');
+    font-style: normal;
+    font-family: 'Roboto-Bold';
+    src: url('./fonts/Roboto-Bold.ttf');
+    font-style: normal;
+    font-family: 'Roboto-Regular';
+    src: url('./fonts/Roboto-Regular.ttf');
+    font-style: normal;
+    font-family: 'Roboto-Light';
+    src: url('./fonts/Roboto-Light.ttf');
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: #ffffff;
 }
@@ -16,7 +38,7 @@ section.welcome {
 }
 
 .title h1 {
-    font-family: 'Cabin Sketch', cursive;
+    font-family: 'CabinSketch-Bold', cursive;
     font-size: 81px;
     font-weight: 900;
     margin-top: 150px;
@@ -26,7 +48,7 @@ section.welcome {
 }
 
 .title p {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto-Bold', sans-serif;
     font-size: 14px;
     font-weight: 700;
     line-height: 22px;
@@ -43,14 +65,14 @@ section.welcome {
 
 .order button {
     background-color: #cf3031;
-    border: 2px solid #cf3031;
+    border: 3px solid #cf3031;
     color: #ffffff;
     border-radius: 20px;
     box-shadow: 0px 30px 45px 0px #cf30314d;
     flex: 0 1 40%;
     height: 66px;
     gap: 10%;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto-Bold', sans-serif;
     font-weight: 700;
     font-size: 16px;
 }
@@ -61,11 +83,11 @@ section.welcome {
 }
 
 .order button:active {
-    border-color: #a11d1d;
+    border-color: #6f0b0b;
 }
 
 .order a {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto-Bold', sans-serif;
     font-size: 16px;
     font-weight: 700;
     color: #4f4f4f;
@@ -150,7 +172,7 @@ section.welcome {
 /*-----------------------------------Delivery-------------*/
 
 .delivery h2 {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto-Black', sans-serif;
     font-weight: 900;
     font-size: 48px;
     color: #cf3031;
@@ -195,7 +217,7 @@ div.delivery .fish2 {
 /*-----------------------------------Delivery-------------*/
 
 .about-us h2 {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto-Black', sans-serif;
     font-weight: 900;
     font-size: 48px;
     color: #cf3031;
@@ -235,9 +257,9 @@ div.about-us {
 }
 
 .about-us .text-about-us {
-    flex: 0 1 50%;
+    flex: 0 1 52%;
     text-align: center;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto-Regular', sans-serif;
     font-weight: 600;
     font-size: 14px;
     line-height: 22px;
