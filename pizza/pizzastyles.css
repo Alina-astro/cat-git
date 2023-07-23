@@ -2,15 +2,27 @@
     font-family: 'CabinSketch-Bold';
     src: url('./fonts/CabinSketch-Bold.ttf');
     font-style: normal;
+}
+
+@font-face {
     font-family: 'Roboto-Black';
     src: url('./fonts/Roboto-Black.ttf');
     font-style: normal;
+}
+
+@font-face {
     font-family: 'Roboto-Bold';
     src: url('./fonts/Roboto-Bold.ttf');
     font-style: normal;
+}
+
+@font-face {
     font-family: 'Roboto-Regular';
     src: url('./fonts/Roboto-Regular.ttf');
     font-style: normal;
+}
+
+@font-face {
     font-family: 'Roboto-Light';
     src: url('./fonts/Roboto-Light.ttf');
     font-style: normal;
@@ -38,7 +50,7 @@ section.welcome {
 }
 
 .title h1 {
-    font-family: 'CabinSketch-Bold', cursive;
+    font-family: 'CabinSketch-Bold', sans-serif;
     font-size: 81px;
     font-weight: 900;
     margin-top: 150px;
@@ -78,12 +90,17 @@ section.welcome {
 }
 
 .order span {
+    font-family: 'Roboto-Light', sans-serif;
     font-weight: 300;
     font-size: 12px;
 }
 
 .order button:active {
     border-color: #6f0b0b;
+}
+
+.order button:hover {
+    box-shadow: none;
 }
 
 .order a {
