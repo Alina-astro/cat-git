@@ -87,6 +87,7 @@ section.welcome {
     font-family: 'Roboto-Bold', sans-serif;
     font-weight: 700;
     font-size: 16px;
+    cursor: pointer;
 }
 
 .order span {
@@ -205,6 +206,7 @@ div.delivery {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 div.delivery div {
@@ -217,6 +219,7 @@ div.delivery div {
     align-items: center;
     position: relative;
     z-index: 2;
+    cursor: pointer;
 }
 
 div.delivery .fish2 {
@@ -231,7 +234,7 @@ div.delivery .fish2 {
 }
 
 
-/*-----------------------------------Delivery-------------*/
+/*-----------------------------------About us-------------*/
 
 .about-us h2 {
     font-family: 'Roboto-Black', sans-serif;
@@ -291,4 +294,5 @@ div.social-contacts {
 
 .social-contacts img {
     width: 90%;
+    cursor: pointer;
 }
