@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 6</title>
+    <style>
+        body {
+            background: rgb(147, 146, 233);
+        }
+
+        .white1 {
+            background-color: white;
+            grid-area: white1;
+        }
+
+        .white2 {
+            background-color: white;
+            grid-area: white2;
+        }
+
+        .white3 {
+            background-color: white;
+            grid-area: white3;
+        }
+
+        .green1 {
+            background-color: rgb(0, 99, 41);
+            grid-area: green1;
+        }
+
+        .green2 {
+            background-color: rgb(0, 99, 41);
+            grid-area: green2;
+        }
+
+        .green3 {
+            background-color: rgb(0, 99, 41);
+            grid-area: green3;
+        }
+
+        .red1 {
+            background-color: #c30000;
+            grid-area: red1;
+        }
+
+        .red2 {
+            background-color: #c30000;
+            grid-area: red2;
+        }
+
+        .red3 {
+            background-color: #c30000;
+            grid-area: red3;
+        }
+
+
+        .grid-container1 {
+            width: 50vw;
+            height: 40vh;
+            padding: 30px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            grid-template-areas:
+                "green1 white1 red1"
+                "green2 white2 red2"
+                "green3 white3 red3"
+        }
+
+        .grid-container2 {
+            width: 50vw;
+            height: 40vh;
+            padding: 30px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            grid-template-areas:
+                "red1 red2 red3"
+                "white1 white2 white3"
+                "green1 green2 green3"
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container1">
+        <div class="white1"></div>
+        <div class="white2"></div>
+        <div class="white3"></div>
+        <div class="green1"></div>
+        <div class="green2"></div>
+        <div class="green3"></div>
+        <div class="red1"></div>
+        <div class="red2"></div>
+        <div class="red3"></div>
+    </div>
+    <div class="grid-container2">
+        <div class="white1"></div>
+        <div class="white2"></div>
+        <div class="white3"></div>
+        <div class="green1"></div>
+        <div class="green2"></div>
+        <div class="green3"></div>
+        <div class="red1"></div>
+        <div class="red2"></div>
+        <div class="red3"></div>
+    </div>
+</body>
+
+</html>

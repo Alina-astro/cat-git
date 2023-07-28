@@ -109,7 +109,144 @@
 
 
 
-        /*------------------------------------V----------------------*/
+        /*------------------------------------V6-1----------------------*/
+        .grid-container {
+            margin: 30px;
+            display: grid;
+            grid-template-columns: repeat(3, 2fr) 1fr;
+            grid-template-rows: 30px 80px 30px;
+            grid-gap: 5px;
+        }
+
+        .grid-container div {
+            color: #ffffff;
+            border: 3px solid violet;
+            background-color: rgb(237, 172, 237);
+
+        }
+
+        .element3 {
+            grid-column: 2/3;
+            grid-row: 3/4;
+        }
+
+        .element5 {
+            grid-column: 4/5;
+            grid-row: 1/4;
+        }
+
+        /*-----*/
+        .grid-container-2 {
+            margin: 20px;
+            padding: 10px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            grid-gap: 10px;
+            align-items: flex-end;
+            justify-items: flex-end;
+        }
+
+        .grid-container-2 div {
+            background-color: #d097ff;
+            color: #ffffff;
+            line-height: 120%;
+            padding: 10px;
+        }
+
+        .text1 {
+            align-self: flex-start;
+            justify-self: flex-start;
+        }
+
+        /*------------------------------------V6-2----------------------*/
+        .grid-container-3 {
+            margin: 20px;
+            padding: 20px;
+            color: #262626;
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            grid-template-rows: 10% 3fr 10%;
+            height: 70vh;
+        }
+
+        .header1 {
+            background-color: #fc94f1;
+            border: 3px solid rgb(182, 106, 182);
+            grid-column: 1/4;
+        }
+
+        .sidebar1 {
+            background-color: #fc94f1;
+            border: 3px solid rgb(182, 106, 182);
+        }
+
+        .content1 {
+            background-color: #fc94f1;
+            border: 3px solid rgb(182, 106, 182);
+        }
+
+        .footer1 {
+            background-color: #fc94f1;
+            border: 3px solid rgb(182, 106, 182);
+            grid-column: 1/4;
+        }
+
+        .grid-container-4 {
+            margin: 20px;
+            padding: 20px;
+            color: #ffffff;
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            grid-template-rows: 10% 1fr 10%;
+            height: 70vh;
+            grid-template-areas:
+                "header header header header"
+                "sidebar main main main"
+                "footer footer footer footer";
+        }
+
+        .header2 {
+            background-color: #fc94f1;
+            border: 3px solid rgb(182, 106, 182);
+            grid-area: header;
+        }
+
+        .sidebar2 {
+            background-color: #fc94f1;
+            border: 3px solid rgb(182, 106, 182);
+            grid-area: sidebar;
+        }
+
+        .content2 {
+            background-color: #fc94f1;
+            border: 3px solid rgb(182, 106, 182);
+            grid-area: main;
+        }
+
+        .footer2 {
+            background-color: #fc94f1;
+            border: 3px solid rgb(182, 106, 182);
+            grid-area: footer;
+        }
+
+        /*------------------------------------V6-2----------------------*/
+        .grid-container-5 {
+            padding: 40px;
+            display: grid;
+            grid-template-columns: 100px 30% 1fr;
+            grid-template-rows: 200px 100px;
+            gap: 10px;
+
+        }
+
+        .grid-container-5 div {
+            border: 3px solid #d097ff;
+            background-color: #fc94f1;
+            color: aliceblue;
+        }
+
+        /*------------------------------------V6-2----------------------*/
     </style>
 </head>
 
@@ -146,7 +283,71 @@
         <div></div>
     </div>
 
-    <!------------------------------------V---------------------->
+    <!------------------------------------V6-1---------------------->
+    <div class="grid-container">
+        <div class="element1">element1</div>
+        <div class="element2">element2</div>
+        <div class="element3">element3</div>
+        <div class="element4">element4</div>
+        <div class="element5">element5</div>
+        <div class="element6">element6</div>
+        <div class="element7">element7</div>
+        <div class="element8">element8</div>
+        <div class="element9">element9</div>
+        <div class="element10">element10</div>
+    </div>
+
+    <div class="grid-container-2">
+        <div class="text1">Мы раскрываем вкус каждого сорта кофе.</div>
+        <div class="text2">Компания имеет долгосрочные контракты по поставке продукции. Каждая партия проходит строгий
+            контроль на заводе для проверки зерна. Зеленое зерно обжаривается, проходит процесс дегазации и тут же
+            отправляется
+            клиентам. Наши обжарщики прошли обучение в России и за рубежом. У нас свой подход к каждой партии зерна.
+        </div>
+        <div class="text3">Мы раскрываем вкус каждого сорта кофе. Кофе поставляется в контейнерах напрямую с плантаций
+            по
+            всему миру.</div>
+        <div class="text4">Компания имеет долгосрочные контракты по поставке продукции. Каждая партия проходит строгий
+            контроль на заводе для проверки зерна. Зеленое зерно обжаривается, проходит процесс дегазации и тут же
+            отправляется
+            клиентам. Наши обжарщики прошли обучение в России и за рубежом.</div>
+        <div class="text5">Мы раскрываем вкус каждого сорта кофе. Кофе поставляется в контейнерах напрямую с плантаций
+            по всему миру. У нас свой подход к каждой партии зерна.</div>
+        <div class="text6">Компания имеет долгосрочные контракты по поставке продукции. Каждая партия проходит строгий
+            контроль на заводе для проверки зерна. Зеленое зерно обжаривается, проходит процесс дегазации и тут же
+            отправляется
+            клиентам. Наши обжарщики прошли обучение в России и за рубежом.</div>
+        <div class="text7">У нас свой подход к каждой партии зерна.</div>
+        <div class="text8">Мы раскрываем вкус каждого сорта кофе. Кофе поставляется в контейнерах напрямую с плантаций
+            по всему миру. У нас свой подход к каждой партии зерна.</div>
+        <div class="text9">Мы раскрываем вкус каждого сорта кофе. Кофе поставляется в контейнерах напрямую с плантаций
+            по всему миру. У нас свой подход к каждой партии зерна.</div>
+
+    </div>
+    <!------------------------------------V6-2---------------------->
+    <div class="grid-container-3">
+        <div class="header1">header</div>
+        <div class="sidebar1">sidebar</div>
+        <div class="content1">content</div>
+        <div class="footer1">footer</div>
+    </div>
+    <div class="grid-container-4">
+        <div class="header2">header</div>
+        <div class="sidebar2">sidebar</div>
+        <div class="content2">content</div>
+        <div class="footer2">footer</div>
+    </div>
+    <!------------------------------------V6-3---------------------->
+    <div class="grid-container-5">
+        <div>header</div>
+        <div>sidebar</div>
+        <div>content</div>
+        <div>footer</div>
+        <div>footer</div>
+        <div>footer</div>
+    </div>
+    <!------------------------------------V6-4---------------------->
+
 </body>
 
 </html>
