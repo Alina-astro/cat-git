@@ -247,6 +247,18 @@
         }
 
         /*------------------------------------V6-2----------------------*/
+        .grid-container-6 {
+            padding: 50px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+        }
+
+        .grid-container-6 div {
+            border: 3px solid #d097ff;
+            background-color: #fc94f1;
+            color: aliceblue;
+        }
     </style>
 </head>
 
@@ -347,7 +359,14 @@
         <div>footer</div>
     </div>
     <!------------------------------------V6-4---------------------->
-
+    <div class="grid-container-6">
+        <div>header</div>
+        <div>sidebar</div>
+        <div>content</div>
+        <div>footer</div>
+        <div>footer</div>
+        <div>footer</div>
+    </div>
 </body>
 
 </html>
