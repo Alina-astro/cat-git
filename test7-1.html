@@ -95,6 +95,40 @@
         .menu__item:hover {
             background-color: #b51da191;
         }
+
+        .container {
+            margin: 20px 0px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 50px 50px;
+            gap: 10px;
+        }
+
+        .container div,
+        .container2 div {
+            background-color: pink;
+        }
+
+        .container2 {
+            display: grid;
+            grid-gap: 5px;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            grid-template-rows: repeat(2, 100px);
+        }
+
+        .container3 {
+            margin: 30px 0px;
+            display: grid;
+            grid-gap: 5px;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            grid-template-rows: repeat(2, 200px);
+        }
+
+        .container3>div>img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
     </style>
 </head>
 
@@ -112,6 +146,40 @@
             <li><a class="menu__item" href="#">О школе</a></li>
             <li><a class="menu__item" href="#">Контакты</a></li>
         </ul>
+    </div>
+    <div class="wrap-img">
+        <img srcset="
+        ./assets/images/imgcat.jpeg 620w, 
+        ./assets/images/pushkin.jpeg 768w, 
+        ./assets/images/redcat.jpeg 880w
+        " sizes="
+        (max-width: 620px) 600px, 
+        (max-width: 768px) 700px, 
+        880px" src="./assets/images/redcat.jpeg" alt="cat" />
+    </div>
+    <div class="container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </div>
+    <div class="container2">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </div>
+    <div class="container3">
+        <div><img src="./assets/images/test7/aboutme.JPG" alt="photo"></div>
+        <div><img src="./assets/images/test7/block5_1.png" alt="photo"></div>
+        <div><img src="./assets/images/test7/block5_3.png" alt="photo"></div>
+        <div><img src="./assets/images/test7/sample_img12.png" alt="photo"></div>
+        <div><img src="./assets/images/test7/sample_img14.png" alt="photo"></div>
+        <div><img src="./assets/images/test7/sample_img15.png" alt="photo"></div>
     </div>
 </body>
 
