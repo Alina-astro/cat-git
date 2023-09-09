@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        /*-------------------------Hamburger menu------------*/
         #menu__toggle {
             opacity: 0;
         }
@@ -96,6 +97,7 @@
             background-color: #b51da191;
         }
 
+        /*-------------------------Container 1------------*/
         .container {
             margin: 20px 0px;
             display: grid;
@@ -109,6 +111,7 @@
             background-color: pink;
         }
 
+        /*-------------------------Container 2------------*/
         .container2 {
             display: grid;
             grid-gap: 5px;
@@ -116,6 +119,7 @@
             grid-template-rows: repeat(2, 100px);
         }
 
+        /*-------------------------Container 3------------*/
         .container3 {
             margin: 30px 0px;
             display: grid;
@@ -129,26 +133,63 @@
             height: 100%;
             object-fit: cover;
         }
+
+        img {
+            width: 300px;
+            height: 300px;
+        }
     </style>
 </head>
 
 <body>
-    <div class="hamburger-menu">
-        <input id="menu__toggle" type="checkbox" />
-        <label class="menu__btn" for="menu__toggle">
-            <span></span>
-        </label>
+    <header>
+        <!-------------------------Hamburger menu------------------>
+        <div class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+                <span></span>
+            </label>
 
-        <ul class="menu__box">
-            <li><a class="menu__item" href="#">Главная</a></li>
-            <li><a class="menu__item" href="#">Проекты</a></li>
-            <li><a class="menu__item" href="#">Команда</a></li>
-            <li><a class="menu__item" href="#">О школе</a></li>
-            <li><a class="menu__item" href="#">Контакты</a></li>
-        </ul>
-    </div>
-    <div class="wrap-img">
-        <img srcset="
+            <ul class="menu__box">
+                <li><a class="menu__item" href="#">Главная</a></li>
+                <li><a class="menu__item" href="#">Проекты</a></li>
+                <li><a class="menu__item" href="#">Команда</a></li>
+                <li><a class="menu__item" href="#">О школе</a></li>
+                <li><a class="menu__item" href="#">Контакты</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <!-------------------------Container 1------------------>
+        <div class="container">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+        </div>
+        <!-------------------------Container 2------------------>
+        <div class="container2">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+        </div>
+        <!-------------------------Container 3------------------>
+        <div class="container3">
+            <div><img src="./assets/images/test7/aboutme.JPG" alt="photo"></div>
+            <div><img src="./assets/images/test7/block5_1.png" alt="photo"></div>
+            <div><img src="./assets/images/test7/block5_3.png" alt="photo"></div>
+            <div><img src="./assets/images/test7/sample_img12.png" alt="photo"></div>
+            <div><img src="./assets/images/test7/sample_img14.png" alt="photo"></div>
+            <div><img src="./assets/images/test7/sample_img15.png" alt="photo"></div>
+        </div>
+        <!-------------------------IMG Adaptive------------------>
+        <div class="wrap-img">
+            <img srcset="
         ./assets/images/imgcat.jpeg 620w, 
         ./assets/images/pushkin.jpeg 768w, 
         ./assets/images/redcat.jpeg 880w
@@ -156,31 +197,8 @@
         (max-width: 620px) 600px, 
         (max-width: 768px) 700px, 
         880px" src="./assets/images/redcat.jpeg" alt="cat" />
-    </div>
-    <div class="container">
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
-        <div>4</div>
-        <div>5</div>
-        <div>6</div>
-    </div>
-    <div class="container2">
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
-        <div>4</div>
-        <div>5</div>
-        <div>6</div>
-    </div>
-    <div class="container3">
-        <div><img src="./assets/images/test7/aboutme.JPG" alt="photo"></div>
-        <div><img src="./assets/images/test7/block5_1.png" alt="photo"></div>
-        <div><img src="./assets/images/test7/block5_3.png" alt="photo"></div>
-        <div><img src="./assets/images/test7/sample_img12.png" alt="photo"></div>
-        <div><img src="./assets/images/test7/sample_img14.png" alt="photo"></div>
-        <div><img src="./assets/images/test7/sample_img15.png" alt="photo"></div>
-    </div>
+        </div>
+    </main>
 </body>
 
 </html>
