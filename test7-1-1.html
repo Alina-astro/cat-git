@@ -8,17 +8,20 @@
     <title>Document</title>
     <style>
         img {
-            width: 300px;
-            height: 300px;
+            width: 800px;
+            height: 800px;
         }
     </style>
 </head>
 
 <body>
-    <img srcset="/redcat.jpeg 880w, /redcat650.jpeg 650w, /redcat400.jpeg 400w" sizes="(max-width: 400px) 400px, 
+    <div class="wrap-img">
+        <img srcset="./assets/images/redcat.jpeg 880w, ./assets/images/redcat650.jpeg 650w, ./assets/images/redcat400.jpeg 400w"
+            sizes="(max-width: 400px) 380px, 
     (max-width: 650px) 600px,
-    (max-width: 1000px) 800px,
+    (max-width: 880px) 800px,
     880px" src="./assets/images/redcat.jpeg" alt="red cat" />
+    </div>
 </body>
 
 </html>
