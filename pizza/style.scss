@@ -1,0 +1,298 @@
+@font-face {
+    font-family: 'CabinSketch-Bold';
+    src: url('./fonts/CabinSketch-Bold.ttf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto-Black';
+    src: url('./fonts/Roboto-Black.ttf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url('./fonts/Roboto-Bold.ttf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('./fonts/Roboto-Regular.ttf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto-Light';
+    src: url('./fonts/Roboto-Light.ttf');
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+section.welcome {
+    padding: 80px 0px 0px 80px;
+    display: flex;
+}
+
+.welcome-text {
+    flex: 1 0 40%;
+}
+
+.logo img {
+    width: 16vw;
+}
+
+.title h1 {
+    font-family: 'CabinSketch-Bold', sans-serif;
+    font-size: 81px;
+    font-weight: 900;
+    margin-top: 150px;
+    line-height: 70px;
+    color: #333333;
+    letter-spacing: 1px;
+}
+
+.title p {
+    font-family: 'Roboto-Bold', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 22px;
+    margin-top: -20px;
+    color: #333333;
+}
+
+.order {
+    margin-top: 65px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.order button {
+    background-color: #cf3031;
+    border: 3px solid #cf3031;
+    color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0px 30px 45px 0px #cf30314d;
+    flex: 0 1 40%;
+    height: 66px;
+    gap: 10%;
+    font-family: 'Roboto-Bold', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.order span {
+    font-family: 'Roboto-Light', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+}
+
+.order button:active {
+    border-color: #6f0b0b;
+}
+
+.order button:hover {
+    box-shadow: none;
+}
+
+.order a {
+    font-family: 'Roboto-Bold', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #4f4f4f;
+    text-decoration: none;
+    display: flex;
+    flex: 0 1 50%;
+    justify-content: flex-start;
+}
+
+.order a:hover {
+    text-decoration: underline;
+}
+
+.tomato {
+    margin: 100px auto auto 50px;
+}
+
+.welcome-image {
+    flex: 1 0 50%;
+    position: relative;
+}
+
+.ellipsered {
+    width: 51.8vw;
+    position: absolute;
+    margin-top: -15px;
+    z-index: auto;
+}
+
+.ellipsewhite {
+    width: 48vw;
+    position: absolute;
+    z-index: 2;
+    margin: 50px 30px 50px 30px;
+}
+
+.imgpizza {
+    width: 52vw;
+    position: absolute;
+    z-index: 4;
+    margin: 5px 90px 50px -15px;
+}
+
+.plant1,
+.plant2,
+.chilli,
+.mashroom,
+.fish1,
+.fish3 {
+    position: absolute;
+    z-index: 3;
+}
+
+.plant1 {
+    margin: -40px auto auto 550px;
+}
+
+.plant2 {
+    margin: 610px auto auto 140px;
+}
+
+.fish1 {
+    margin: 330px auto auto -100px;
+}
+
+.fish3 {
+    margin: 130px auto auto 520px;
+}
+
+.chilli {
+    margin: 600px auto auto 520px;
+}
+
+.mashroom {
+    margin: 80px auto auto 140px;
+}
+
+.leaf {
+    margin: 770px auto auto -60px;
+}
+
+/*-----------------------------------Delivery-------------*/
+
+.delivery h2 {
+    font-family: 'Roboto-Black', sans-serif;
+    font-weight: 900;
+    font-size: 48px;
+    color: #cf3031;
+    text-align: center;
+}
+
+.delivery span {
+    color: #333333;
+}
+
+div.delivery {
+    padding: 20px 80px 40px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+div.delivery div {
+    width: 20vw;
+    aspect-ratio: 1/1;
+    box-shadow: 0px 4px 50px 0px rgba(71, 85, 114, 0.15);
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+}
+
+div.delivery .fish2 {
+    position: absolute;
+    z-index: 0;
+    margin: 290px auto auto 790px;
+}
+
+.delivery .plant2 {
+    position: absolute;
+    margin: 300px auto auto 280px;
+}
+
+
+/*-----------------------------------About us-------------*/
+
+.about-us h2 {
+    font-family: 'Roboto-Black', sans-serif;
+    font-weight: 900;
+    font-size: 48px;
+    color: #cf3031;
+    text-align: center;
+}
+
+.about-us span {
+    color: #333333;
+}
+
+div.about-us {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-us .imgleft,
+.about-us .imgright {
+    flex: 0 1 20%;
+}
+
+.imgleft img,
+.imgright img {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.imgleft .mashroom {
+    width: 8%;
+    position: absolute;
+    margin: 150px auto auto -180px;
+}
+
+.imgright .plant1 {
+    width: 12%;
+    position: absolute;
+    margin: -90px auto auto -185px;
+}
+
+.about-us .text-about-us {
+    flex: 0 1 52%;
+    text-align: center;
+    font-family: 'Roboto-Regular', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+div.social-contacts {
+    padding: 40px 38% 40px 38%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-contacts img {
+    width: 90%;
+    cursor: pointer;
+}
