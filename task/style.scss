@@ -269,7 +269,8 @@ img {
   letter-spacing: 4px;
   overflow: hidden; // содержимое не вылазит за пределы
   padding: 15px 30px;
-  transition: 0.2s;
+  transition: 1s;
+  transition-delay: 1s; // после линий через 1сек закрашивание
 }
 .button-link__line {
   position: absolute;
@@ -332,3 +333,13 @@ img {
   transition: 1s;
   transition-delay: 0.25s;
 }
+
+// закрашивание после линий (не работает)
+// .button-link:hover {
+//   transition: 1s;
+//   transition-delay: 1s;
+//   color: #4dc04f;
+//   top: 100%;
+//   box-shadow: 0 0 10px goldenrod;
+//   background-color: goldenrod;
+// }
