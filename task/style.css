@@ -243,4 +243,89 @@ img {
 
 .btn:hover {
   width: 800px;
+}
+
+.container3 {
+  background-color: #bc8faf;
+  padding: 30px;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 600;
+}
+
+.button-link {
+  position: relative;
+  color: #ffffff;
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 24px;
+  letter-spacing: 4px;
+  overflow: hidden;
+  padding: 15px 30px;
+  transition: 0.2s;
+}
+
+.button-link__line {
+  position: absolute;
+  display: block;
+}
+
+.button-link__line--top {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, pink);
+}
+
+.button-link:hover .button-link__line--top {
+  left: 100%;
+  transition: 1s;
+  transition-delay: 0.25s;
+}
+
+.button-link__line--bottom {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, pink);
+}
+
+.button-link:hover .button-link__line--bottom {
+  right: 100%;
+  transition: 1s;
+  transition-delay: 0.25s;
+}
+
+.button-link__line--left {
+  left: 0;
+  bottom: -100%;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(270deg, transparent, pink);
+}
+
+.button-link:hover .button-link__line--left {
+  bottom: 100%;
+  transition: 1s;
+  transition-delay: 0.25s;
+}
+
+.button-link__line--right {
+  right: 0;
+  top: -100%;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(270deg, transparent, pink);
+}
+
+.button-link:hover .button-link__line--right {
+  top: 100%;
+  transition: 1s;
+  transition-delay: 0.25s;
 }/*# sourceMappingURL=style.css.map */
