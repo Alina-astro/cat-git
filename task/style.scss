@@ -45,17 +45,13 @@ header {
       @include button(80px, 25px);
     }
   }
-}
-input {
-  @extend %style-input;
-}
-
-button {
-  @include button(100px, 50px);
-}
-
-header {
   margin-bottom: 50px;
+  input {
+    @extend %style-input;
+  }
+  button {
+    @include button(100px, 50px);
+  }
 }
 
 //------------new------------//
@@ -71,7 +67,6 @@ header {
 }
 .wrapper {
   display: flex;
-
   margin: 0 auto;
   max-width: 1080px;
 }
@@ -83,9 +78,24 @@ header {
   justify-content: center;
   align-items: flex-start;
   row-gap: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ab8e69;
+  h1 {
+    font-size: 18px;
+  }
   p {
     max-width: 429px;
     width: 100%;
+  }
+  button {
+    background-color: burlywood;
+    font-family: $font;
+    text-transform: uppercase;
+    border: 2px solid #be9e74;
+    border-radius: 10px;
+    width: 80px;
+    height: 30px;
+    color: antiquewhite;
   }
 }
 .block-img {
@@ -104,4 +114,135 @@ header {
 
 img {
   width: 100%;
+}
+
+// animation
+
+.cont {
+  background-color: rosybrown;
+  margin: 50px 0;
+  padding: 30px;
+  height: 25vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// duration - устанавливает длительность анимации
+
+.button {
+  width: 200px;
+  height: 70px;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0 30px;
+  text-transform: uppercase;
+  font-size: 18px;
+  border-radius: 10px;
+  position: relative;
+  top: 0;
+}
+
+.button_1 {
+  color: aliceblue;
+  background-color: #9a4da7;
+  box-shadow: 0 10px 0 #562c5ed3;
+  transition-duration: 0.3s;
+  transition-property: all; // анимируется всё
+}
+
+.button_1:hover {
+  top: 4px;
+  background-color: #674da7;
+  box-shadow: 0 4px 0 #2c325ec2;
+}
+.button_1:active {
+  background-color: #4a3879;
+}
+// property - указывает, что должно анимироваться и на какое время
+// delay - указывает, через сколько начнется анимация, можно также указать несколько временных значений
+
+// .button_1 {
+//   color: aliceblue;
+//   background-color: #9a4da7;
+//   box-shadow: 0 10px 0 #562c5ed3;
+//   transition-duration: 0.6s, 1s; // можно указать время для каждой категории изменения
+//   transition-property: background-color, box-shadow; // можно через запятую указать, что должно изменяться по времени
+// }
+
+// .button_1:hover {
+//   top: 4px;
+//   background-color: #674da7;
+//   box-shadow: 0 4px 0 #2c325ec2;
+// }
+
+// new
+
+.container2 {
+  background-color: burlywood;
+  padding: 30px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.btn {
+  width: 300px;
+  height: 80px;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0 30px;
+  text-transform: uppercase;
+  font-size: 18px;
+  border-radius: 10px;
+  position: relative;
+  top: 0;
+  transition-duration: 3s;
+  margin-bottom: 10px;
+}
+
+.btn1 {
+  color: white;
+  background-color: #887091;
+  transition-timing-function: ease;
+}
+.btn2 {
+  color: white;
+  background-color: #267540;
+  transition-timing-function: ease-in;
+}
+.btn3 {
+  color: white;
+  background-color: #4dc04f;
+  transition-timing-function: ease-out;
+}
+.btn4 {
+  color: white;
+  background-color: #c7641d;
+  transition-timing-function: ease-in-out;
+}
+.btn5 {
+  color: white;
+  background-color: #3d5c80;
+  transition-timing-function: linear;
+}
+.btn6 {
+  color: white;
+  background-color: #20836c;
+  transition-timing-function: steps(10, start); // сколько шагов
+}
+.btn7 {
+  color: white;
+  background-color: rgba(115, 2, 89, 0.744);
+  transition-timing-function: cubic-bezier(
+    0.48,
+    1.08,
+    0.86,
+    -0.15
+  ); // через генератор
+}
+
+.btn:hover {
+  width: 800px;
 }
