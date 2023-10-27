@@ -21,6 +21,17 @@ $color-bg-card: #ec615b;
   color: $color-text;
 }
 
+%btn-link {
+  font-family: $font-title;
+  font-size: 13px;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 13px 16px;
+  background-color: $color-button;
+  border-radius: 100px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -29,4 +40,31 @@ $color-bg-card: #ec615b;
 
 body {
   padding: 60px;
+  max-width: 1440px;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 200px;
+  height: 40px;
+  .logo__img {
+    width: 100%;
+  }
+}
+
+.btn-basket {
+  width: 115px;
+  height: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .btn-basket__link {
+    @extend %btn-link;
+  }
 }
