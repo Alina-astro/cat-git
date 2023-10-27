@@ -1,0 +1,22 @@
+@font-face {
+  font-family: "Intro";
+  src: url(../assets/fonts/intro.ttf);
+}
+
+@font-face {
+  font-family: "RobotoSlab";
+  src: url(../assets/fonts/RobotoSlab-VariableFont_wght.ttf);
+}
+
+$font-title: "Intro";
+$font-text: "RobotoSlab";
+$color-text: #000000;
+$color-button: #5222d0;
+$color-bg-card: #ec615b;
+
+%text {
+  font-family: $font-text;
+  font-size: 20px;
+  font-weight: 300;
+  color: $color-text;
+}
