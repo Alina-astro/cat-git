@@ -44,6 +44,7 @@ $color-button-active: #411c9f;
   border-radius: 100px;
   font-family: $font-title;
   font-size: $font-size;
+  cursor: pointer;
 }
 
 * {
@@ -114,7 +115,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
   .button__icon {
     margin: 0 0 10px 15px;
   }
@@ -140,9 +140,67 @@ body {
     align-items: center;
     .nav__link {
       @extend %text;
-      color: $color-button;
       text-decoration: none;
+    }
+    .nav__link_blu {
+      color: $color-button;
     }
   }
 }
 // --------------------- page 2
+.box {
+  padding: 30px 60px 0 120px;
+  .box__title {
+    font-family: $font-title;
+    font-size: 60px;
+    font-weight: 500;
+  }
+  .box__row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    .card {
+      width: 26vw;
+      .card__img {
+        width: 100%;
+      }
+      .card__subtitle {
+        font-family: $font-title;
+        font-size: 30px;
+        font-weight: 500;
+        margin-top: 20px;
+      }
+
+      .card__text {
+        @extend %text;
+        width: 94%;
+        margin-top: 20px;
+      }
+    }
+    .card_red {
+      background-color: $color-bg-card;
+      padding: 0 20px 40px 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .card__subtitle_white {
+        color: $color-text-button;
+      }
+      .card__input {
+        border: none;
+        height: 50px;
+        @extend %text;
+        padding-left: 10px;
+      }
+      .card__button {
+        @include button(135px, 38px, 13px);
+      }
+      .card__button:active {
+        border: 5px solid $color-button-active;
+      }
+    }
+  }
+}
+.footer_bottom {
+  margin-bottom: 60px;
+}

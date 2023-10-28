@@ -6,7 +6,7 @@
   font-family: "RobotoSlab";
   src: url(../assets/fonts/RobotoSlab-VariableFont_wght.ttf);
 }
-.footer .nav .nav__link, .container .container__text {
+.box .box__row .card_red .card__input, .box .box__row .card .card__text, .footer .nav .nav__link, .container .container__text {
   font-family: "RobotoSlab";
   font-size: 20px;
   font-weight: 300;
@@ -90,13 +90,13 @@ body {
   border-radius: 100px;
   font-family: "Intro";
   font-size: 35px;
+  cursor: pointer;
 }
 
 .button {
   display: flex;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
 }
 .button .button__icon {
   margin: 0 0 10px 15px;
@@ -123,6 +123,71 @@ body {
   align-items: center;
 }
 .footer .nav .nav__link {
-  color: #5222d0;
   text-decoration: none;
+}
+.footer .nav .nav__link_blu {
+  color: #5222d0;
+}
+
+.box {
+  padding: 30px 60px 0 120px;
+}
+.box .box__title {
+  font-family: "Intro";
+  font-size: 60px;
+  font-weight: 500;
+}
+.box .box__row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.box .box__row .card {
+  width: 26vw;
+}
+.box .box__row .card .card__img {
+  width: 100%;
+}
+.box .box__row .card .card__subtitle {
+  font-family: "Intro";
+  font-size: 30px;
+  font-weight: 500;
+  margin-top: 20px;
+}
+.box .box__row .card .card__text {
+  width: 94%;
+  margin-top: 20px;
+}
+.box .box__row .card_red {
+  background-color: #ec615b;
+  padding: 0 20px 40px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.box .box__row .card_red .card__subtitle_white {
+  color: #ffffff;
+}
+.box .box__row .card_red .card__input {
+  border: none;
+  height: 50px;
+  padding-left: 10px;
+}
+.box .box__row .card_red .card__button {
+  width: 135px;
+  height: 38px;
+  background-color: #5222d0;
+  border: none;
+  color: #ffffff;
+  border-radius: 100px;
+  font-family: "Intro";
+  font-size: 13px;
+  cursor: pointer;
+}
+.box .box__row .card_red .card__button:active {
+  border: 5px solid #411c9f;
+}
+
+.footer_bottom {
+  margin-bottom: 60px;
 }/*# sourceMappingURL=style.css.map */
