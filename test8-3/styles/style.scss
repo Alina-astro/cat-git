@@ -13,23 +13,36 @@ $font-text: "RobotoSlab";
 $color-text: #000000;
 $color-button: #5222d0;
 $color-bg-card: #ec615b;
+$color-text-button: #ffffff;
 
 %text {
   font-family: $font-text;
   font-size: 20px;
   font-weight: 300;
   color: $color-text;
+  line-height: 32px;
 }
 
 %btn-link {
   font-family: $font-title;
   font-size: 13px;
-  color: white;
+  color: $color-text-button;
   text-decoration: none;
   text-transform: uppercase;
   padding: 13px 16px;
   background-color: $color-button;
   border-radius: 100px;
+}
+
+@mixin button($widht, $height, $font-size) {
+  width: $widht;
+  height: $height;
+  background-color: $color-button;
+  border: none;
+  color: $color-text-button;
+  border-radius: 100px;
+  font-family: $font-title;
+  font-size: $font-size;
 }
 
 * {
@@ -39,12 +52,12 @@ $color-bg-card: #ec615b;
 }
 
 body {
-  padding: 60px;
   max-width: 1440px;
   width: 100%;
 }
-
+// -------------------------header
 .header {
+  padding: 30px 60px 0 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -66,5 +79,50 @@ body {
   align-items: center;
   .btn-basket__link {
     @extend %btn-link;
+  }
+}
+// -----------------------main block
+
+.wrap {
+  padding: 0 0 60px 120px;
+  display: flex;
+  height: 75vh;
+}
+.container {
+  border: 1px solid purple;
+  flex-basis: 44%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .container__title {
+    font-family: $font-title;
+    font-size: 60px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+  }
+  .container__text {
+    @extend %text;
+    margin: 20px 0;
+    width: 90%;
+  }
+  .container__button {
+    @include button(270px, 84px, 35px);
+  }
+}
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .button__icon {
+    margin: 0 0 10px 15px;
+  }
+}
+
+.aside {
+  flex-grow: 1;
+  border: 1px solid purple;
+  .img {
+    height: 135%;
   }
 }
