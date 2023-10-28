@@ -14,6 +14,7 @@ $color-text: #000000;
 $color-button: #5222d0;
 $color-bg-card: #ec615b;
 $color-text-button: #ffffff;
+$color-button-active: #411c9f;
 
 %text {
   font-family: $font-text;
@@ -89,7 +90,6 @@ body {
   height: 75vh;
 }
 .container {
-  border: 1px solid purple;
   flex-basis: 44%;
   display: flex;
   flex-direction: column;
@@ -114,15 +114,35 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
   .button__icon {
     margin: 0 0 10px 15px;
   }
 }
 
+.button:active {
+  border: 5px solid $color-button-active;
+}
+
 .aside {
   flex-grow: 1;
-  border: 1px solid purple;
   .img {
     height: 135%;
   }
 }
+// ------------------------footer
+.footer {
+  margin: 60px 0 0 120px;
+  width: 38vw;
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .nav__link {
+      @extend %text;
+      color: $color-button;
+      text-decoration: none;
+    }
+  }
+}
+// --------------------- page 2
